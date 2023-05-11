@@ -196,22 +196,22 @@
     <div class="facts-container container-fluid">
         <div class="container facts-wrapper">
             <div class="row facts-inner-wrapper">
-                <div class="col-lg-6 col-md-6 col-6 wow fadeIn" data-wow-delay="0.3">
+                <div class="col-lg-3 col-md-3 col-6 wow fadeIn" data-wow-delay="0.3">
                     <i class="fa fa-check fa-2x"></i>
                     <h6 class="counter">1234</h6>
                     <p>Years Experience</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-6 wow fadeIn" data-wow-delay="0.3">
+                <div class="col-lg-3 col-md-3 col-6 wow fadeIn" data-wow-delay="0.3">
                     <i class="fa fa-users fa-2x"></i>
                     <h6 class="counter">1234</h6>
                     <p>Expert Technicians</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-6 wow fadeIn" data-wow-delay="0.5">
+                <div class="col-lg-3 col-md-3 col-6 wow fadeIn" data-wow-delay="0.5">
                     <i class="fa fa-users fa-2x"></i>
                     <h6 class="counter">1234</h6>
                     <p>Satisfied Clients</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-6 wow fadeIn" data-wow-delay="0.5">
+                <div class="col-lg-3 col-md-3 col-6 wow fadeIn" data-wow-delay="0.5">
                     <i class="fa fa-car fa-2x"></i>
                     <h6 class="counter">1234</h6>
                     <p>Serviced Cars</p>
@@ -221,12 +221,74 @@
         </div>
     </div>
 
-    <div class="cta-container container-fluid">
-        <div class="row cta-wrapper">
-            <h2>Call Us Now!</h2>
-            <a href="" class="btn btn-custom py-3 px-5 animated slideInDown">1234567890</a>
+
+    <div class="explore-container container-fluid">
+        <div class="explore-wrapper row">
+            <span style="color:#d81324" class="text-center ex-header">//Our Services//</span>
+            <h3 style="color:#0b2154" class="text-center ex-tagline">Explore Our Services</h3>
+            <div class="explore-wrapper-left col-md-4 col-lg-4 col-12">
+                <div class="dservice serv active">
+                    <i class="fa fa-car fa-2x"></i><span>Diagnostic Test</span>
+                </div>
+                <div class="eservice serv">
+                    <i class="fa fa-car fa-2x"></i><span>Engine Servicing</span>
+                </div>
+                <div class="tservice serv">
+                    <i class="fa fa-cog fa-2x"></i><span>Tires Replacement</span>
+                </div>
+                <div class="oservice serv">
+                    <i class="fa fa-cog fa-2x"></i><span>Oil Changing</span>
+                </div>
+            </div>
+            <div class="explore-wrapper-right col-md-8 col-lg-8 col-12 dservice">
+                <div class="row service-detail dservice">
+                    <div class="col-12 col-lg-6 col-md-6 service-image ">
+                        <img src="img/service-1.jpg" />
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 service-text">
+                        <h4>15 Years Of Experiencing In Auto Servicing</h4>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="explore-wrapper-right col-md-8 col-lg-8 col-12 eservice hide">
+                <div class="row service-detail dservice">
+                    <div class="col-12 col-lg-6 col-md-6 service-image ">
+                        <img src="img/service-2.jpg" />
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 service-text">
+                        <h4>15 Years Of Experiencing In Engine Servicing</h4>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-wrapper-right col-md-8 col-lg-8 col-12 tservice hide">
+                <div class="row service-detail dservice">
+                    <div class="col-12 col-lg-6 col-md-6 service-image">
+                        <img src="img/service-3.jpg" />
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 service-text">
+                        <h4>15 Years Of Experiencing In Tyre Servicing</h4>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-wrapper-right col-md-8 col-lg-8 col-12 oservice hide">
+                <div class="row service-detail dservice">
+                    <div class="col-12 col-lg-6 col-md-6 service-image">
+                        <img src="img/service-4.jpg" />
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 service-text">
+                        <h4>15 Years Of Experiencing In Oil Servicing</h4>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    
 
 
     <div class="booking-container container-fluid wow fadeInUp" data-wow-delay="0.1s">
@@ -400,6 +462,59 @@
                 }
             }
         });
+
+
+        const buttons = document.querySelectorAll('.serv');
+        const showcards = document.querySelectorAll('.explore-wrapper-right');
+
+        buttons.forEach((b) => {
+            b.addEventListener('click', function (e) {
+                console.log(e.target.parentElement)
+                buttons.forEach((btn) => {
+                    btn.classList.remove('active')
+                })
+                e.target.parentElement.classList.add('active'); 
+                console.log(e.target.parentElement)
+                if (e.target.parentElement.classList.contains('dservice')) {
+                    showcards.forEach((sbtn) => {
+                        if (sbtn.classList.contains('dservice')){
+                            sbtn.classList.remove('hide')
+                        } else {
+                            sbtn.classList.add('hide')
+                        }
+                    })
+
+                } else if (e.target.parentElement.classList.contains('eservice')){
+                    showcards.forEach((sbtn) => {
+                        if (sbtn.classList.contains('eservice')) {
+                            sbtn.classList.remove('hide')
+                        } else {
+                            sbtn.classList.add('hide')
+                        }
+                    })
+                } else if (e.target.parentElement.classList.contains('tservice')) {
+                    showcards.forEach((sbtn) => {
+                        if (sbtn.classList.contains('tservice')) {
+                            sbtn.classList.remove('hide')
+                        } else {
+                            sbtn.classList.add('hide')
+                        }
+                    })
+                } else if (e.target.parentElement.classList.contains('oservice')) {
+                    showcards.forEach((sbtn) => {
+                        if (sbtn.classList.contains('oservice')) {
+                            sbtn.classList.remove('hide')
+                        } else {
+                            sbtn.classList.add('hide')
+                        }
+                    })
+                }
+            })
+
+
+
+
+        })
     </script>
 </body>
 </html>
