@@ -136,7 +136,7 @@
 
     .service-card {
         height: 100%;
-        border: 2px solid #B8101F;
+        //border: 2px solid #B8101F;
         text-align: center;
         padding:0px 3px!important;
     }
@@ -297,23 +297,40 @@
     }
 
     .tech-image{
-        
+       
         border:none;
     }
 
     .tech-image img{
-       width:100%; 
+       width:80%; 
        height:80%; 
+       margin:0px auto!important;
        object-fit:contain;
        padding:0px!important;
+       //border:1px solid red;
+       //border-radius:25px;
     }
 
     .s2{
         height:200vh;
+        //border:1px solid red;
+    }
+
+    .tech-header{
+        color:#0b2154!important;
+        font-weight:800;
+    }
+
+    .tech-span {
+        color: #D81324;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 1.0px;
     }
 
     .testimonial-container{
         height:50vh;
+        margin-bottom:100px;
     }
 
     .testimonial-wrapper{
@@ -327,6 +344,62 @@
     .testimonial-item{
         height:100%; 
     }
+
+    .contact-form {
+        background: #B8101F;
+    }
+
+    .form-button {
+        background: #0B2154!important;
+        //border:1px solid white;
+    }
+
+
+    .owl-item.active .testimonial-text {
+        //border: 2px solid black !important;
+        background: #D81324!important; 
+        color:white!important;
+    }
+
+    .footer-container{
+        height:120vh;
+        background:black!important;
+        color:white!important;
+    }
+
+    .footer-wrapper{
+        height:100%; 
+        padding-top:100px;
+        margin-left:20px;
+    }
+
+    .footer-wrapper h5{
+        font-weight:800;
+        font-size:24px;
+    }
+
+    .footer-wrapper p{
+        font-size:18px;
+        margin:30px auto;
+    }
+
+    .f-top, .f-center, .f-bottom{
+        //border:1px solid white;
+        height:30%; 
+    }
+
+    .f-center span{
+        display:block;
+
+    }
+
+    .head{
+        font-weight:800;
+        font-size:18px;
+        margin-top:5px;
+    }
+
+    
 
 }
 
@@ -414,7 +487,7 @@
 
     .service-card {
         height: 100%;
-        border: 2px solid #B8101F;
+        //border: 2px solid #B8101F;
         text-align: center;
         padding: 10px 30px !important;
     }
@@ -567,8 +640,14 @@
         //border:1px solid white;
     }
 
-    .form-button{
-        width:100%; 
+    .form-button {
+        width: 100%;
+        background: #0B2154 !important;
+        //border:1px solid white;
+    }
+
+    .contact-form {
+        background: #B8101F;
     }
 
 
@@ -577,15 +656,75 @@
     }
 
         .tech-image img {
-            width: 100%;
+            width: 80%;
             height: 80%;
+            margin: 0px auto !important;
             object-fit: contain;
             padding: 0px !important;
+            //border:1px solid red;
+            //border-radius:25px;
         }
 
     .s2 {
         height: 200vh;
     }
+
+
+    .tech-header {
+        color: #0b2154 !important;
+        font-weight: 800;
+    }
+
+    .tech-span {
+        color: #D81324;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 1.0px;
+    }
+
+    .owl-item.active .testimonial-text {
+        //border: 2px solid black !important;
+        background: #D81324 !important;
+        color: white !important;
+    }
+
+    .footer-container {
+        height: 120vh;
+        background: black !important;
+        color: white !important;
+    }
+
+    .footer-wrapper {
+        height: 100%;
+        padding-top: 100px;
+        margin-left: 20px;
+    }
+
+        .footer-wrapper h5 {
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        .footer-wrapper p {
+            font-size: 18px;
+            margin: 30px auto;
+        }
+
+    .f-top, .f-center, .f-bottom {
+        //border:1px solid white;
+        height: 30%;
+    }
+
+        .f-center span {
+            display: block;
+        }
+
+    .head {
+        font-weight: 800;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
 
 
 }

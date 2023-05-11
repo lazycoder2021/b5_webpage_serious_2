@@ -229,7 +229,7 @@
     </div>
 
 
-    <div class="booking-container container-fluid">
+    <div class="booking-container container-fluid wow fadeInUp" data-wow-delay="0.1s">
         <div class="row booking-wrapper">
             <div class="col-md-6 col-lg-6 col-12 booking-wrapper-left">
                 <h3>Certified and Award Winning Car Repair Service Provider</h3>
@@ -237,8 +237,8 @@
                 <p>Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem.</p>
             </div>
             <div class="col-md-6 col-lg-6 col-12 booking-wrapper-right">
-                <h3 style="color:white;margin-top:25px;" class="text-center">Book Our Service</h3>
-                <form class="contact-form px-3 py-4">
+                <h3 style="color:white;margin-top:25px;" class="text-center wow zoomIn" data-wow-delay="0.6s">Book Our Service</h3>
+                <form class="contact-form px-3 py-4 wow zoomIn" data-wow-delay="0.6s">
                     <div class="form-group ">
                         <input type="email" class="form-control mb-3 py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
@@ -259,8 +259,8 @@
     <div class="container-fluid services-container s2">
         <div class="container services-wrapper container">
             <div class="row services-wrapper-inner technicians">
-                <span class="text-center" style="padding-top:40px;">//Our Technicians//</span>
-                <h3 class="text-center">Our Expert Technicians</h3>
+                <span class="text-center tech-span" style="padding-top:40px;">//Our Technicians//</span>
+                <h3 class="text-center tech-header">Our Expert Technicians</h3>
                 <div class="col-lg-4 col-md-4 col-12 service-card-wrapper wow fadeInUp" data-wow-delay="0.1s">
                     <div class="card service-card tech-image mt-2">
                         <img src="img/team-1.jpg" />
@@ -289,8 +289,8 @@
     <div class="container-fluid py-5 wow fadeInUp testimonial-container" data-wow-delay="0.1s">
         <div class="container testimonial-wrapper">
             <div class="text-center">
-                <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-                <h1 class="mb-5">Our Clients Say!</h1>
+                <h6 class="text-primary text-uppercase" style="color:#d81324">// Testimonial //</h6>
+                <h1 class="mb-5" style="color:#b8101f">Our Clients Say!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
@@ -330,6 +330,33 @@
     </div>
 
 
+    <div class="footer-container container-fluid">
+        <div class="footer-wrapper row">
+            <div class="col-lg-4 col-md-4 col-12 f-top">
+                <h5>Address</h5>
+                <p>123 Street, New York, USA</p>
+                <p>+11 1234567890</p>
+                <p>info@example.com</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 f-center">
+                <h5>Opening Hours</h5>
+                <span class="head">Monday-Friday</span>
+                <span>09.00AM - 09.00PM</span><br/>
+                <span class="head">Saturday-Sunday</span>
+                <span>09.00AM - 09.00PM</span>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 f-bottom">
+                <h5>Services</h5>
+                <p>Diagnostic Testing</p>
+                <p>Engine Testing</p>
+                <p>Tire Replacement</p>
+                <p>Oil Replacement</p>
+            </div>
+        </div>
+        
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="lib/wow.min.js"></script>
@@ -345,6 +372,34 @@
                 time: 1000
             });
         })
+
+
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+
+
+
+        $(".testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            center: true,
+            margin: 25,
+            dots: true,
+            loop: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
     </script>
 </body>
 </html>
